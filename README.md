@@ -33,5 +33,28 @@ good-keys=1 # Es wird nur eine gültige Signatur gebraucht
 
 Anpassungen site.mk:
 
-Aktualisierungs-Prioritaet auf 1 gesetzt (Updatre nicht sofort, sondern im Laufe eines Tages)
+Aktualisierungs-Prioritaet auf 1 gesetzt Auto-(Update nicht sofort, sondern im Laufe eines Tages)
 In der Stable-Variante Image-Dateiname ohne Build-Datum (wegen der Lesbarkeit)
+
+
+Solltest Du noch ein Image mit alter (falscher) Auto-Update URL haben kannst Du von Hand aktualisieren:
+Im Netz "Freifunk Bingen" via ssh auf den "Next Node" (Deinen Node) einloggen. Damit
+
+ssh root@10.37.0.1
+
+funktioniert, musst Du Deinen oeffentlichen SSH-Key auf dem Node hinterlegt haben, oder ein passwort fuer
+root in der Gluon-Konfiguration vergeben haben.
+
+auf der Konsole dann
+
+uci delete autoupdater.stable.mirror
+
+uci add_list autoupdater.stable.mirror="http:/firmware.freifunk-bingen.de/stable/sysupgrade"
+
+uci commit
+
+Danach sollte das Update funktionieren:
+
+autoupdater -f
+
+
