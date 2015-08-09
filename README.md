@@ -4,13 +4,20 @@ Site-Config für das Freifunk-Bingen Image
 Basierend auf der Config des Freifunk Mainz
 https://github.com/freifunk-mwu/site-ffmwu
 
-Anpassungen site.conf:
+Anpassungen der site.conf:
 
 site_name = 'Freifunk Bingen'
+site_code = "ffbin'
+ntp_servers = {
+	'0.pool.ntp.org', --ntp.org
+	'1.pool.ntp.org', --ntp.org
+        '2.pool.ntp.org', --ntp.org
+},
+
 
 ssid = 'Freifunk Bingen'
 
-mirrors = { 'http://www.freifunk-bingen.de/firmware/stable/sysupgrade', -- combined (DNS) }
+mirrors = { 'http://firmware.freifunk-bingen.de/stable/sysupgrade', -- combined (DNS) }
 
 pubkeys = {
 
@@ -26,4 +33,5 @@ good-keys=1 # Es wird nur eine gültige Signatur gebraucht
 
 Anpassungen site.mk:
 
-Vorerst keine, später würde ich das Build-Datum aus dem Dateinamen herausnehmen und das Aktualisierungsintervall von 0 auf z.B. 3 Tage erhöhen
+Aktualisierungs-Prioritaet auf 1 gesetzt (Updatre nicht sofort, sondern im Laufe eines Tages)
+In der Stable-Variante Image-Dateiname ohne Build-Datum (wegen der Lesbarkeit)
