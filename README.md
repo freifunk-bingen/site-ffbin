@@ -10,7 +10,7 @@ site_name = 'Freifunk Bingen'
 
 ssid = 'Freifunk Bingen'
 
-mirrors = { 'http://freifunk-bingen.de/firmware/stable/sysupgrade', -- combined (DNS) }
+mirrors = { 'http://www.freifunk-bingen.de/firmware/stable/sysupgrade', -- combined (DNS) }
 
 pubkeys = {
 
