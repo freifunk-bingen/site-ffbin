@@ -47,10 +47,10 @@ DEFAULT_GLUON_RELEASE := 0.6
 #			gluon-ff%site_code%-23.42+5-%router_model%.bin
 
 # Allow overriding the release number from the command line
-GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
+GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)-beta-0.1
 
 # Default priority for updates.
-GLUON_PRIORITY ?= 1
+GLUON_PRIORITY ?= 3
 
 # Languages to include
 GLUON_LANGS ?= en de
