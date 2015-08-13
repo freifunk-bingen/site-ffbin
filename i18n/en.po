@@ -15,13 +15,23 @@ msgstr ""
 "Welcome the the setup wizard of your new Freifunk Bingen node. "
 "Please fill out the following form and transmit it."
 
+msgid "gluon-config-mode:offlinewarning"
+msgstr ""
+msgstr "As long as you did not register your key and there is no other "
+msgstr "Freifunk-Router in range, your probably offline right now. <b />"
+msgstr "Please use your regular internet-connection to register your node's "
+msgstr "key."
+
+
 msgid "gluon-config-mode:pubkey"
 msgstr ""
 "This is your Freifunk node's public key. The node won't be able to "
 "connect to the mesh VPN until the key has been registered on the Freifunk "
 "Bingen servers. "
 "To register the key send it together with your node's name (<em><%=hostname%></em>) to "
-"<a href=\"mailto:keys@freifunk-bingen.de\">keys@freifunk-bingen.de</a>."
+"<a href=\"mailto:keys@freifunk-bingen.de?subject=Neuen%20Knoten%20<%=hostname%>%20registrieren&body=<%=hostname%>%20<%=pubkey%>\">keys@freifunk-bingen.de</a>.<br />"
+"<br />You may also register your Node-Key at "
+"<a href=\"https://www.freifunk-bingen.de/drupal_/router-registrieren?node_name=<%=hostname%>&node_key=<%=pubkey%>\">our Website</a>."
 
 
 msgid "gluon-config-mode:reboot"
