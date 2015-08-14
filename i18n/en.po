@@ -31,7 +31,7 @@ msgstr ""
 "To register the key send it together with your node's name (<em><%=hostname%></em>) to "
 "<a href=\"mailto:keys@freifunk-bingen.de?subject=Neuen%20Knoten%20<%=hostname%>%20registrieren&body=<%=hostname%>%20<%=pubkey%>\">keys@freifunk-bingen.de</a>.<br />"
 "<br />You may also register your Node-Key at "
-"<a href=\"https://www.freifunk-bingen.de/drupal_/router-registrieren?node_name=<%=hostname%>&node_key=<%=pubkey%>\">our Website</a>."
+"<a href=\"https://www.freifunk-bingen.de/router-registrieren?node_name=<%=hostname%>&node_key=<%=pubkey%>\">our Website</a>."
 
 
 msgid "gluon-config-mode:reboot"
