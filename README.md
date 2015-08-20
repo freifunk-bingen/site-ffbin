@@ -1,14 +1,17 @@
 # site-ffbin
 Site-Config für das nächste Freifunk-Bingen Image
 
-Basierend auf der Config des Freifunk Mainz
+Code-Base auf Grundlage von Gluon 2015.1.2
+
+Config basiert auf der des Freifunk Mainz
 https://github.com/freifunk-mwu/site-ffmwu
 
+* Angepasste SSID und sitecode
+* Public NTP Server
+* Eigene Updateserver
+* Eigene Keys zum signieren der Images eingefügt
 
-* Update-URL auf https umgestellt
-* Update-Branch auf "beta" gestellt
-* Dateinamen um "-beta-0.1" ergänzt
-* Mainzer Keys entfernt
-* Eigenen, neuen ECDSA-Key eingefügt
+* Versionierungsschema: Gluon-Version + FFBIN-Release
+  Aktuell: 0.6-stable1
 
 
