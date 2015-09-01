@@ -28,7 +28,20 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	haveged \
 	iptables \
-	iwinfo
+	iwinfo \
+	collectd \
+	collectd-mod-network \
+	collectd-mod-interface \
+	collectd-mod-wireless \
+	collectd-mod-ping \
+	collectd-mod-cpu \
+	collectd-mod-df \
+	collectd-mod-load \
+	collectd-mod-memory \
+	collectd-mod-processes \
+	collectd-mod-syslog \
+	collectd-mod-tcpconns 
+	
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
