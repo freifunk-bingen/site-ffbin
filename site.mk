@@ -21,7 +21,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-autoupdater \
 	gluon-luci-portconfig \
 	gluon-luci-wifi-config \
-	gluon-luci-private-wifi \
 	gluon-next-node \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
@@ -48,7 +47,7 @@ DEFAULT_GLUON_RELEASE := 0.6
 #			gluon-ff%site_code%-23.42+5-%router_model%.bin
 
 # Allow overriding the release number from the command line
-GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)-stable1
+GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)-experimental1
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 3
