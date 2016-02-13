@@ -1,17 +1,7 @@
 # site-ffbin
-Site-Config für das nächste Freifunk-Bingen Image
+Experimentelles Freifunk Bingen-Image mit L2TPv3 als Tunnelprotokoll.
 
-Code-Base auf Grundlage von Gluon 2015.1.2
+* Basiert auf Gluon 2016.1
+* L2TPv3-Tunnelprotokoll als Ersatz für fastd um eine höhere Bandbreite ohne Offloader zu erreichen. ACHTUNG: L2TPv3 ist im Gegensatz zu fastd unverschluesselt.
 
-Config basiert auf der des Freifunk Mainz
-https://github.com/freifunk-mwu/site-ffmwu
-
-* Angepasste SSID und sitecode
-* Public NTP Server
-* Eigene Updateserver
-* Eigene Keys zum signieren der Images eingefügt
-
-* Versionierungsschema: Gluon-Version + FFBIN-Release
-  Aktuell: 0.6-stable1
-
-
+Falls beim Backen Tunneldigger-relevante Pakete fehlen, https://github.com/ffrl/ffrl-packages in das package-Verzeichnis auschecken.
