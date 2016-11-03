@@ -50,7 +50,9 @@ DEFAULT_GLUON_RELEASE := 0.8+exp$(shell date '+%Y%m%d')
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 # Default priority for updates.
-GLUON_PRIORITY ?= 3
+GLUON_PRIORITY ?= 0
 
 # Languages to include
 GLUON_LANGS ?= en de
+GLUON_REGION = eu
+GLUON_ATH10K_MESH = ibss
