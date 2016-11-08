@@ -1,6 +1,2 @@
 # site-ffbin
-Site-Config für das nächste Freifunk-Bingen Image
-
-Code-Base auf Grundlage von Gluon 2016.1
-
-
+Konfiguration für die Binger Freifunk Firmware 0.8.2 auf Basis von Gluon v2016.2.
