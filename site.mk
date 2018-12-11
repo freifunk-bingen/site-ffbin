@@ -4,34 +4,29 @@
 #		specify gluon/openwrt packages to include here
 #		The gluon-mesh-batman-adv-* package must come first because of the dependency resolution
 
+# Featureset, these are either virtual or packages prefixed with "gluon-"
+GLUON_FEATURES := \
+	autoupdater \
+	ebtables-filter-multicast \
+	ebtables-filter-ra-dhcp \
+	mesh-batman-adv-15 \
+	mesh-vpn-fastd \
+	radv-filterd \
+	radvd \
+	respondd \
+	status-page \
+	web-advanced \
+	web-logging \
+	web-private-wifi \
+	web-wizard
+
+# Additional packages to install on every image
 GLUON_SITE_PACKAGES := \
-	gluon-mesh-batman-adv-15 \
-	gluon-alfred \
-	gluon-autoupdater \
-	gluon-config-mode-autoupdater \
-	gluon-config-mode-contact-info \
-	gluon-config-mode-core \
-	gluon-config-mode-geo-location \
-	gluon-config-mode-hostname \
-	gluon-config-mode-mesh-vpn \
-	gluon-ebtables-filter-multicast \
-	gluon-ebtables-filter-ra-dhcp \
-	gluon-luci-admin \
-	gluon-luci-autoupdater \
-	gluon-luci-portconfig \
-	gluon-luci-wifi-config \
-	gluon-luci-node-role \
-	gluon-next-node \
-	gluon-mesh-vpn-fastd \
-	gluon-radv-filterd \
-	gluon-radvd \
-	gluon-respondd \
-	gluon-setup-mode \
-	gluon-status-page \
-	haveged \
 	iptables \
 	iwinfo \
-	tecff-ath9k-broken-wifi-workaround
+	haveged \
+	respondd-module-airtime \
+	ffmwu-beta-to-testing
 
 # basic support for USB stack
 USB_PACKAGES_BASIC := \
@@ -40,8 +35,8 @@ USB_PACKAGES_BASIC := \
 
 # USB HID support
 USB_PACKAGES_HID += \
-        kmod-usb-hid \
-        kmod-hid-generic \
+	kmod-usb-hid \
+	kmod-hid-generic \
 
 # storage support for USB devices
 USB_PACKAGES_STORAGE := \
@@ -169,3 +164,6 @@ GLUON_PRIORITY ?= 0
 GLUON_LANGS ?= en de
 GLUON_REGION = eu
 GLUON_ATH10K_MESH ?= 11s
+
+# Build gluon with multidomain support.
+GLUON_MULTIDOMAIN=1
