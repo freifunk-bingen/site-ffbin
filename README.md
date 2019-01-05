@@ -1,2 +1,2 @@
 # site-ffbin
-Konfiguration für die Binger Freifunk Firmware 2016.2.7+ffbin2
+Konfiguration für die Binger Freifunk Firmware 2018.1.3+ffbin1
